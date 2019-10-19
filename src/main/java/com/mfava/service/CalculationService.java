@@ -13,14 +13,6 @@ public class CalculationService {
     public static void findMinPath(int[][] triangle) {
         Function<ArrayList<Integer>, Integer> calculateCurrentTotal = (u) -> u.stream().mapToInt(Integer::intValue).sum();
         int t = triangle.length - 1;
-        ArrayList<ArrayList<Integer>> tr2 = new ArrayList<>();
-        for (int a = 0; a < triangle.length; a++) {
-            ArrayList<Integer> bArray = new ArrayList<>();
-            for (int b = 0; b < triangle[a].length; b++) {
-                bArray.add(triangle[a][b]);
-            }
-            tr2.add(bArray);
-        }
 
         ValuePath[] valuePaths = Arrays.stream(triangle[t])
                 .mapToObj(element -> {
