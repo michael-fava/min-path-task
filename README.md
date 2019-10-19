@@ -1,5 +1,7 @@
 # Mininal Path Task
 
+Contact Email: mfava85@gmail.com
+
 ## Executing the project
 
 Command to exectue the project below:
